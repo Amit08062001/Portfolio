@@ -1,0 +1,87 @@
+.project {
+    padding: 50px 20px;
+    background: 
+    radial-gradient(circle at top right, rgba(0, 168, 255, 0.2), transparent 70%),
+    radial-gradient(circle at bottom left, rgba(128, 0, 128, 0.2), transparent 70%);
+    color: #ffffff;
+    text-align: center;
+    margin-left: 100px;
+    position: relative;
+    bottom: 50px;
+    
+  }
+  
+  .project-title {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .section-underline {
+    border: 0;
+    height: 10px;
+    background: #008cba;
+    width: 200px;
+    position: absolute; 
+    left: 530px;
+    top: 135px;
+   
+  }
+  
+  .project-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .project-card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .project-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    height: 150px;
+  }
+  
+  .project-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+  .github{
+    color: #ffff;
+    text-decoration: none;
+    display: block;
+    background-color: maroon;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 auto;
+    transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
+  }
+  .year-range {
+    font-size: 2em;
+    color: #00a8ff;
+    margin-top: 20px;
+  }
+  .project-card:hover{
+    transform: scale(1.05);
+   box-shadow: 0 8px 16px rgba(3, 239, 243, 0.3);
+  }
+  .github:hover{
+    transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(4, 210, 237, 0.3);
+  filter: grayscale(0%);
+  }
