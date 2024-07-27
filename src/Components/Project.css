@@ -63,12 +63,12 @@
   .github{
     color: #ffff;
     text-decoration: none;
-    display: block;
+    display: inline-block;
     background-color: maroon;
     width: fit-content;
     padding: 10px;
     border-radius: 5px;
-    margin: 0 auto;
+    margin: 10px;
     transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
   }
   .year-range {
