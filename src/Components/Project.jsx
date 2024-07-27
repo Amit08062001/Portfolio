@@ -14,12 +14,14 @@ const Project = () => {
           <h3>MelodyStream</h3>
           <p>MelodyStream is a modern music streaming web application designed to offer a seamless and interactive user experience. The application features a clean and intuitive interface where users can easily navigate through different sections, play songs, and enjoy smooth transitions and animations.</p>
           <a className='github' href='https://github.com/Amit08062001/MelodyStream1'>Github</a>
+          <a className='github' href='https://amit08062001.github.io/WheatherApp/'>Live</a>
         </div>
         <div className="project-card">
           <img src={project1Image} alt="Arrowai Industries 2022" />
           <h3>MelodyStream</h3>
           <p>MelodyStream is a modern music streaming web application designed to offer a seamless and interactive user experience. The application features a clean and intuitive interface where users can easily navigate through different sections, play songs, and enjoy smooth transitions and animations.</p>
           <a className='github' href='https://github.com/Amit08062001/MelodyStream1'>Github</a>
+          <a className='github' href='https://amit08062001.github.io/WheatherApp/'>Live</a>
         </div>
       </div>
     </section>
