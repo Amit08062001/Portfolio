@@ -26,6 +26,13 @@ const Project = () => {
           <a className='github' href='https://github.com/Amit08062001/WheatherApp/'>Github</a>
           <a className='github' href='https://amit08062001.github.io/WheatherApp/'>Live</a>
         </div>
+        <div className="project-card">
+          <img src={project2Image} alt="Arrowai Industries 2022" />
+          <h3>Fit Raho</h3>
+          <p>Fit Raho is a dynamic and interactive fitness and wellness platform dedicated to empowering users to lead healthier and more active lives. The site offers a holistic approach to fitness, integrating personalized workout plans and comprehensive nutrition guides to support users health goals.</p>
+          <a className='github' href='https://github.com/Amit08062001/Fit-Raho'>Github</a>
+          <a className='github' href='https://amit08062001.github.io/Fit-Raho/'>Live</a>
+        </div>
       </div>
     </section>
   );
