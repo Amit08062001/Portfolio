@@ -22,7 +22,7 @@ const Project = () => {
         <div className="project-card">
           <img src={project2Image} alt="Arrowai Industries 2022" />
           <h3>WheatherApp</h3>
-          <p>A weather widget that fetches data from the OpenWeatherMap API, displaying dynamic background images and weather details like temperature and wind. It uses HTML, CSS, and JavaScript .</p>
+          <p>A weather widget that fetches data from the OpenWeatherMap API, displaying dynamic background images and weather details such as temperature, 'feels like' temperature, and wind speed. It features a responsive design with HTML and CSS for styling, and JavaScript for handling API interactions.</p>
           <a className='github' href='https://github.com/Amit08062001/WheatherApp/'>Github</a>
           <a className='github' href='https://amit08062001.github.io/WheatherApp/'>Live</a>
         </div>
