@@ -17,7 +17,7 @@ const Contact = () => {
         <div className="contact-item">
           <FaEnvelope className="contact-icon" />
           <h3>Email </h3>
-          <p>Amitsingh08062001@gmail.com</p>
+          <p>amitsingh08062001@gmail.com</p>
         </div>
         <div className="contact-item">
           <FaMapMarkerAlt className="contact-icon" />

@@ -1,87 +1,174 @@
+/* Project Section */
 .project {
-    padding: 50px 20px;
-    background: 
+  padding: 40px 20px;
+  background: 
     radial-gradient(circle at top right, rgba(0, 168, 255, 0.2), transparent 70%),
     radial-gradient(circle at bottom left, rgba(128, 0, 128, 0.2), transparent 70%);
-    color: #ffffff;
-    text-align: center;
-    margin-left: 100px;
-    position: relative;
-    bottom: 50px;
-    
-  }
-  
-  .project-title {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    position: relative;
-  }
-  
-  .section-underline {
-    border: 0;
-    height: 10px;
-    background: #008cba;
-    width: 200px;
-    position: absolute; 
-    left: 530px;
-    top: 135px;
-   
-  }
-  
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1200px;
+}
+
+/* Title Styling */
+.project-title {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+/* Underline Styling */
+.section-underline {
+  border: 0;
+  height: 8px;
+  background: #008cba;
+  width: 160px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100px; /* Adjusted to be below the title */
+}
+
+/* Grid Layout for Projects */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center cards horizontally */
+}
+
+/* Individual Project Card */
+.project-card {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative; /* Needed for link positioning */
+}
+
+/* Card Image */
+.project-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Card Title */
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Card Description */
+.project-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Links Container */
+.project-card .links {
+  display: flex;
+  gap: 10px; /* Space between links */
+  justify-content: center; /* Center links horizontally */
+  margin-top: auto; /* Push links to the bottom */
+}
+
+/* Individual Link Styling */
+.project-card .links a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #a52a2a; /* Adjusted color */
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
+}
+
+.project-card .links a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.2); /* Brighten on hover */
+}
+.github {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #333333;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.github:hover {
+  background-color: #444444; /* Slightly lighter background on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.github:first-of-type {
+  background-color: #333; /* Darker color for the GitHub link */
+}
+
+.github:last-of-type {
+  background-color: #00a8ff; /* Bright color for the Live link */
+}
+
+.github:first-of-type:hover {
+  background-color: #444; /* Lighter color on hover for GitHub link */
+}
+
+.github:last-of-type:hover {
+  background-color: #0091ea; /* Lighter color on hover for Live link */
+}
+
+/* Year Range Styling */
+.year-range {
+  font-size: 1.5rem;
+  color: #00a8ff;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .project-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    align-items: center; /* Center align cards */
   }
-  
-  .project-card {
-    background-color: #1e1e1e;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 300px;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .project-card img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    height: 150px;
-  }
-  
-  .project-card h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-  
-  .project-card p {
-    font-size: 1em;
-    line-height: 1.6;
-  }
-  .github{
-    color: #ffff;
-    text-decoration: none;
-    display: inline-block;
-    background-color: maroon;
-    width: fit-content;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 10px;
-    transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
-  }
-  .year-range {
-    font-size: 2em;
-    color: #00a8ff;
+  .project-title {
+    font-size: 2rem;
     margin-top: 20px;
   }
-  .project-card:hover{
-    transform: scale(1.05);
-   box-shadow: 0 8px 16px rgba(3, 239, 243, 0.3);
+
+  .section-underline {
+    width: 130px; /* Adjust underline width for smaller screens */
+    top: 90px; /* Adjust top spacing */
+    
   }
-  .github:hover{
-    transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(4, 210, 237, 0.3);
-  filter: grayscale(0%);
+
+  .github {
+    font-size: 1rem; /* Adjust font size for medium screens */
+    padding: 8px 16px; /* Adjust padding for medium screens */
+    margin: 5px 5px; /* Adjust margin for medium screens */
+}
+}
+
+@media screen and (max-width: 576px) {
+  .github {
+      font-size: 0.9rem; /* Further adjust font size for small screens */
+      padding: 6px 12px; /* Further adjust padding for small screens */
+      margin: 5px 3px; /* Further adjust margin for small screens */
   }
+}

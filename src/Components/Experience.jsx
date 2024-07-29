@@ -6,7 +6,6 @@ const Experience = () => {
     <section className="experience-section">
       <div className="experience-container">
         <h2 className="section-title">EXPERIENCE</h2>
-        <hr className="section-underline" />
         <div className="timeline-experience">
           <div className="timeline-item">
             <div className="timeline-icon">»</div>

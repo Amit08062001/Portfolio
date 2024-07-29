@@ -4,9 +4,8 @@ const Education = () => {
   return (
     <section className="education">
       <h1>EDUCATION</h1>
-      <hr className="education-underline" />
       <div className="timeline">
-        <h2>2019 - 2023</h2>
+        <h2 className="date">2019 - 2023</h2>
         <ul>
           <li>
             <h3>Roorkee College Of Engineering , Roorkee</h3>
