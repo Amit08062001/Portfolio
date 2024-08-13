@@ -6,7 +6,7 @@
   width: 100%;
   height: 30px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
   border-top: 1px solid #444;
@@ -67,24 +67,24 @@
 .social-links a:hover {
   background: linear-gradient(135deg, #00a8ff, #007bb5);
   color: #fff;
-  transform: scale(1.1); /* Slightly smaller scale */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Reduced shadow */
+  transform: scale(1.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
-/* Icon-specific styles */
+
 .social-links .fa {
-  font-size: 1.4rem; /* Smaller icon size */
+  font-size: 1.4rem; 
 }
 
-/* Responsive Design */
+
 @media screen and (max-width: 768px) {
   .footer {
-    flex-direction: row; /* Ensure content stays in one line */
+    flex-direction: row; 
     align-items: center;
   }
 
   .footer-content {
-    flex-direction: row; /* Ensure content stays in one line */
+    flex-direction: row; 
     text-align: left;
   }
 

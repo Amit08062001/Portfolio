@@ -32,20 +32,22 @@ const Header = () => {
         <nav>
           <ul>
             <li><NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>HOME</NavLink></li>
+            <li><NavLink to="About" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>ABOUT</NavLink></li>
             <li><NavLink to="/project" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>PROJECT</NavLink></li>
             <li><NavLink to="/experience" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>EXPERIENCE</NavLink></li>
             <li><NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>CONTACT</NavLink></li>
-            <li><NavLink to="/education" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMenu}>EDUCATION</NavLink></li>
+           
           </ul>
         </nav>
       </div>
       <nav className="desktop-nav">
         <ul>
           <li><NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>HOME</NavLink></li>
+          <li><NavLink to="/About" className={({ isActive }) => isActive ? 'active' : ''}>ABOUT</NavLink></li>
           <li><NavLink to="/project" className={({ isActive }) => isActive ? 'active' : ''}>PROJECT</NavLink></li>
           <li><NavLink to="/experience" className={({ isActive }) => isActive ? 'active' : ''}>EXPERIENCE</NavLink></li>
           <li><NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''}>CONTACT</NavLink></li>
-          <li><NavLink to="/education" className={({ isActive }) => isActive ? 'active' : ''}>EDUCATION</NavLink></li>
+    
         </ul>
       </nav>
     </header>

@@ -1,14 +1,11 @@
 /* Contact Container */
 .contact-container {
-    background: 
-    radial-gradient(circle at top right, rgba(0, 168, 255, 0.2), transparent 70%),
-    radial-gradient(circle at bottom left, rgba(128, 0, 128, 0.2), transparent 70%);
     color: #ffffff;
     min-height: 100vh;
     position: relative;
     overflow: hidden;
-    margin: 0 auto; /* Center the container */
-    width: 100%; /* Ensure it takes the full width */
+    margin: 0 auto; 
+    width: 100%; 
 }
 
 /* Overlay Background */
@@ -29,7 +26,7 @@
 .contact-title {
     font-size: 3.5rem;
     text-align: center;
-    margin: 0; /* Remove bottom margin */
+    margin: 2rem; /* Remove bottom margin */
     padding-bottom: 0.5rem; /* Small padding to create space below title */
 }
 
@@ -47,7 +44,7 @@
 /* Contact Info Grid */
 .contact-info {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(3,1fr); /* Responsive grid */
     gap: 2rem;
     padding: 0; /* Remove extra padding */
 }

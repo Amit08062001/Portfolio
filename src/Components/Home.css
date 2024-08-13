@@ -3,16 +3,40 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #121212;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
+.home h1{
+    font-size: 2.5rem;
+    margin: 0;
+}
   
 .App {
-    min-height: 100vh; /* Ensures the App takes full viewport height */
     display: flex;
     flex-direction: column;
+    background: linear-gradient(135deg, rgba(0, 168, 255, 0.2), rgba(128, 0, 128, 0.2));
+    
+}
+.container{
+    display: inline-block;
+}
+.text{
+    overflow: hidden;
+    font-size: 2.5rem;
+    margin: 0px;
+    color: #00a8ff;
+    white-space: nowrap;
+    animation: typing 4s steps(60,end)  infinite;
+    font-weight: 700;
+}
+@keyframes typing{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
 }
   
 /* Header */
@@ -61,24 +85,37 @@ section {
     padding: 40px 0;
 }
   
-p {
-    line-height: 1.7;
+.home-p-2 {
+    line-height: 2rem;
     color: #e0e0e0;
+    font-size: 1.3rem;
 }
 
 /* Home Section */
 .home {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Ensure items are spread out */
+    justify-content: space-evenly; /* Ensure items are spread out */
     padding: 30px 40px;
     flex-wrap: wrap;
-    background: linear-gradient(135deg, rgba(0, 168, 255, 0.2), rgba(128, 0, 128, 0.2));
+    margin-bottom: 0;
 }
 
 .home-content {
-    width: 60%;
+    width: 45%;
     text-align: center; /* Center align text */
+    
+}
+.resume{
+    background:linear-gradient(140deg, #640778,rgba(0, 168, 255, 0.2));
+    padding: 1rem;
+    border-radius: 10px;
+    
+}
+.resume a {
+    text-decoration: none;
+    font-size: 1rem;
+    color:#ffff;
 }
 
 .home-image-container {
@@ -109,13 +146,11 @@ p {
     width: 130%;
     height: 130%;
     object-fit: cover;
-    transform: translate(-50%, -50%) rotate(-5deg);
-    transition: transform 0.5s ease;
+    transform: translate(-50%, -45%) rotate(-0deg);
+    
 }
 
-.tilted-frame:hover img {
-    transform: translate(-50%, -50%) rotate(-5deg) scale(1.1);
-}
+
 
 /* Skills Section */
 .skills {
@@ -126,6 +161,7 @@ p {
     background: rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    
 }
 
 .skills h2 {

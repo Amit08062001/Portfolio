@@ -37,97 +37,7 @@ header {
   border-radius: 5px;
 }
 
-/* Education Section */
-.education {
-  position: relative;
-  background: radial-gradient(circle at top right, rgba(0, 168, 255, 0.2), transparent 70%),
-              radial-gradient(circle at bottom left, rgba(128, 0, 128, 0.2), transparent 70%);
-  color: #ffffff;
-  padding: 40px;
-  border-radius: 15px;
-  margin: 20px 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
 
-.education h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  position: relative;
-  padding-bottom: 15px;
-  border-bottom: 3px solid #00a8ff;
-  display: inline-block;
-}
-
-.education-underline {
-  border: 0;
-  height: 4px;
-  background: #00a8ff;
-  width: 180px;
-  position: absolute;
-  left: 0;
-  top: 70px;
-}
-
-.education .timeline {
-  position: relative;
-  padding: 20px 0;
-}
-
-.education .timeline::before {
-  content: '';
-  position: absolute;
-  left: 25px;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background-color: #00a8ff;
-}
-
-.education .timeline ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.education .timeline ul li {
-  position: relative;
-  margin-bottom: 30px;
-  padding-left: 60px;
-  padding-bottom: 20px;
-}
-
-.education .timeline ul li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 8px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #00a8ff;
-}
-
-.education .timeline h2 {
-  font-size: 1.8rem;
-  margin: 0;
-  color: #00a8ff;
-}
-
-.education .timeline h3 {
-  font-size: 1.4rem;
-  margin: 5px 0;
-}
-
-.education .timeline p {
-  margin: 5px 0;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.8);
-}
-.education .timeline .date{
-  margin-left: 60px;
-}
 
 /* Skills Section */
 .skills {
@@ -170,96 +80,11 @@ header {
 }
 
 /* Home Section */
-.home {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 30px;
-  flex-wrap: wrap;
-}
 
-.home-content {
-  width: 60%;
-}
-
-.home h1 {
-  font-size: 3rem;
-  margin: 0;
-  padding: 0;
-}
-
-.home h2 {
-  color: #00a8ff;
-  font-size: 2.5rem;
-  margin: 0;
-  padding: 0;
-  animation: verticalBounce 1s ease infinite;
-}
-
-/* Animated Text */
-@keyframes fadeIn {
-  0% {
-    opacity: 0.5;
-    transform: translateY(10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animated-text span {
-  display: inline-block;
-  animation: fadeIn 3s ease-in-out forwards infinite;
-}
-
-/* Home Image Container */
-.home-image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 20px;
-  margin-left: 0;
-}
-
-.tilted-frame {
-  position: relative;
-  width: 250px;
-  height: 333px;
-  background: #ffffff;
-  border: 10px solid #a8eddc;
-  transform: rotate(10deg);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.tilted-frame img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 120%;
-  height: 120%;
-  object-fit: cover;
-  transform: translate(-50%, -50%) rotate(-10deg);
-}
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-  .home-content {
-    width: 90%;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  .home-image-container {
-    margin-left: 0;
-  }
-
-  .tilted-frame {
-    width: 200px;
-    height: 267px;
-  }
+  
 
   .footer-content {
     flex-direction: column;

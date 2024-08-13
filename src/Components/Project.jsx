@@ -3,15 +3,12 @@ import './Project.css';
 import project1Image from '../assets/project1.png'; 
 import project2Image from "../assets/project2.png";
 import project3Image from "../assets/project3.png";
-
-
-
-
+import Footer from './Footer'
 const Project = () => {
   return (
+    <>
     <section id="project" className="project">
-      <h2 className="project-title"> Projects</h2>
-      <hr className="section-underline" />
+      <h2 className="project-title"> PROJECTS</h2>
       <div className="project-grid">
         <div className="project-card">
           <img src={project1Image} alt="project" />
@@ -37,6 +34,8 @@ const Project = () => {
         </div>
       </div>
     </section>
+    <Footer/>
+    </>  
   );
 };
 

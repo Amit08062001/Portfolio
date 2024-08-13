@@ -1,9 +1,6 @@
 /* Project Section */
 .project {
   padding: 40px 20px;
-  background: 
-    radial-gradient(circle at top right, rgba(0, 168, 255, 0.2), transparent 70%),
-    radial-gradient(circle at bottom left, rgba(128, 0, 128, 0.2), transparent 70%);
   color: #ffffff;
   text-align: center;
   margin: 0 auto;
@@ -119,11 +116,11 @@
 }
 
 .github:first-of-type {
-  background-color: #333; /* Darker color for the GitHub link */
+  background-color: #7fafa7; /* Darker color for the GitHub link */
 }
 
 .github:last-of-type {
-  background-color: #00a8ff; /* Bright color for the Live link */
+  background-color: #5f8091; /* Bright color for the Live link */
 }
 
 .github:first-of-type:hover {

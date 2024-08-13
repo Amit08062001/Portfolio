@@ -1,8 +1,9 @@
 import React from 'react';
 import './Experience.css';
-
+import Footer from './Footer'
 const Experience = () => {
   return (
+    <>
     <section className="experience-section">
       <div className="experience-container">
         <h2 className="section-title">EXPERIENCE</h2>
@@ -32,6 +33,8 @@ const Experience = () => {
         </div>
       </div>
     </section>
+    <Footer/>
+    </>  
   );
 };
 

@@ -12,10 +12,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1e90ff; /* A more vibrant blue */
+  background:linear-gradient(140deg, #640778,rgba(100, 174, 211, 0.2));
   color: #ffffff;
   padding: 1rem 2rem;
   position: relative;
+  margin-bottom: 0px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Slightly heavier shadow for depth */
 }
 
