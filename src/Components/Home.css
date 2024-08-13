@@ -3,7 +3,6 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
-    color: #ffffff;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
@@ -26,7 +25,7 @@ body, html {
     overflow: hidden;
     font-size: 2.5rem;
     margin: 0px;
-    color: #00a8ff;
+    color: #8e24aa;
     white-space: nowrap;
     animation: typing 4s steps(60,end)  infinite;
     font-weight: 700;
@@ -88,9 +87,9 @@ section {
   
 .home-p-2 {
     line-height: 2rem;
-    color: #e0e0e0;
+    color: #00A8FF;
     font-size: 1.3rem;
-    text-align: left;
+    text-align: center;
 }
 
 /* Home Section */
@@ -113,7 +112,7 @@ section {
     background:linear-gradient( #640778,rgba(0, 168, 255, 0.2));
     padding: 1rem;
     border-radius: 10px;
-    display: flex
+    
     
 }
 .resume a {
@@ -259,9 +258,7 @@ section {
     }
     .home-p-2{
     line-height: 1.2rem;
-    color: #e0e0e0;
     font-size: 1rem; 
-    text-align: left;
     }
     .resume{
         margin-top: 1rem;
