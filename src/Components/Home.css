@@ -20,6 +20,7 @@ body, html {
 }
 .container{
     display: inline-block;
+    margin: 20%;
 }
 .text{
     overflow: hidden;
@@ -32,7 +33,7 @@ body, html {
 }
 @keyframes typing{
     from{
-        width: 0%;
+        width: 0;
     }
     to{
         width: 100%;
@@ -254,7 +255,7 @@ section {
         font-size: clamp(1.5rem, 4vw, 1.5rem); 
     }
     .text{
-        font-size: clamp(1.5rem, 4vw, 1.5rem); 
+        font-size:1.5rem; 
     }
     .home-p-2{
     line-height: 1.2rem;
