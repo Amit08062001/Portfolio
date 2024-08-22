@@ -1,14 +1,14 @@
 import React, { useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import './MobileMenu.css';
+import { IoIosClose } from "react-icons/io";
 
 const MobileMenu = ({ isOpen, closeMenu }) => {
-  // Create a ref for the close button
-  const closeButtonRef = useRef(null);
+const closeButtonRef = useRef(null);
 
   useEffect(() => {
     if (isOpen && closeButtonRef.current) {
-      closeButtonRef.current.focus(); // Set focus to the close button when the menu opens
+      closeButtonRef.current.focus(); 
     }
   }, [isOpen]);
 
@@ -20,7 +20,7 @@ const MobileMenu = ({ isOpen, closeMenu }) => {
         aria-label="Close menu"
         ref={closeButtonRef}
       >
-        X
+        <IoIosClose />
       </button>
       <ul>
         <li><NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>HOME</NavLink></li>

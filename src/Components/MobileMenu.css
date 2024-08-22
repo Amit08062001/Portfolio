@@ -1,6 +1,4 @@
-/* MobileMenu.css */
 
-/* Mobile styles */
 @media (max-width: 768px) {
     .mobile-menu {
         position: fixed;
@@ -29,7 +27,7 @@
         background: #555;
         border: none;
         color: #fff;
-        font-size: 1.8rem;
+        font-size: 0.1rem;
         cursor: pointer;
         align-self: flex-end;
         margin-bottom: 20px;
@@ -199,7 +197,7 @@
         background: #555;
         border: none;
         color: #fff;
-        font-size: 1.8rem;
+        
         cursor: pointer;
         align-self: flex-end;
         margin-bottom: 20px;

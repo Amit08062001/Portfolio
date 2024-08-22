@@ -51,7 +51,7 @@ header {
 
 .desktop-nav ul li a:hover,
 .desktop-nav ul li a.active {
-  background-color: #4682b4; /* Darker shade of blue */
+  background-color: #078bf7; /* Darker shade of blue */
   color: #ffffff;
 }
 
@@ -59,7 +59,7 @@ header {
 .hamburger {
   display: none;
   flex-direction: column;
-  gap: 5px; /* Increased space between lines */
+  gap: 3px; /* Increased space between lines */
   cursor: pointer;
 }
 
@@ -74,10 +74,10 @@ header {
 .side-nav {
   position: fixed;
   top: 0;
-  right: -300px; /* Expanded width for more content space */
+  right: -300px; 
   height: 100%;
   width: 300px;
-  background-color: #2f2f2f; /* Slightly lighter background for contrast */
+  background: linear-gradient( 135deg,rgba(0, 168, 255, 1), rgba(128, 0, 128, 1));
   color: #ffffff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Match the header shadow */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -92,15 +92,16 @@ header {
 
 .side-nav .close-btn {
   position: absolute;
-  top: 10px; /* Adjusted spacing from the top */
-  right: 10px; /* Adjusted spacing from the right side */
+  top: 10px; 
+  right: 10px; 
   background: none;
   border: none;
-  color: #ffffff;
-  font-size: 2.5rem; /* Larger close button for ease of use */
+  color: #060606;
+  font-size: 1.5rem; /* Larger close button for ease of use */
   cursor: pointer;
   transition: color 0.3s, transform 0.3s; /* Added transform transition */
   z-index: 1100; /* Ensure it's above other content */
+  font-weight: 700;
 }
 
 .side-nav .close-btn:hover {
@@ -119,25 +120,27 @@ header {
   margin: 0;
   display: flex;
   flex-direction: column;
-  height: calc(100% - 60px); /* Adjust for close button */
+  height: calc(100% - 20px); /* Adjust for close button */
 }
 
 .side-nav nav ul li {
-  margin: 20px 0; /* Increased margin for better spacing */
+  margin: 10px 0; /* Increased margin for better spacing */
 }
 
 .side-nav nav ul li a {
-  color: #ffffff;
+  color: #0c0c0c;
   text-decoration: none;
   display: block;
   padding: 15px 25px; /* More padding for easier navigation */
   border-radius: 8px; /* Consistent rounded corners */
   transition: background-color 0.3s, color 0.3s;
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .side-nav nav ul li a:hover,
 .side-nav nav ul li a.active {
-  background-color: #4682b4; /* Consistent with desktop nav */
+  background-color: #9e02ff; /* Consistent with desktop nav */
   color: #ffffff;
 }
 
