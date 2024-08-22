@@ -138,7 +138,8 @@
   }
 
   .timeline-icon {
-      font-size: 36px; /* Further adjust icon size for very small screens */
+      font-size: 36px;
+      margin-top: 0.5rem; /* Further adjust icon size for very small screens */
   }
 
   .timeline-content h3 {
