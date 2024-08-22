@@ -89,7 +89,7 @@
 
   .footer-content {
     flex-direction: row; 
-    text-align: left;
+    justify-content: space-around;
   }
 
   .social-links {
@@ -101,10 +101,13 @@
   .footer {
     padding: 0.625rem 0.9375rem; /* 10px 15px */
   }
+  .footer-content{
+    justify-content: space-around;
+  }
 
   .social-links a {
     width: 1.875rem; /* 30px */
     height: 1.875rem; /* 30px */
-    font-size: 0.625rem; /* 1rem */
+    font-size: 0.5rem; /* 1rem */
   }
 }
