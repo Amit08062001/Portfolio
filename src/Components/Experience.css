@@ -1,147 +1,120 @@
-/* Experience Section */
 .experience-section {
   color: #ffffff;
-  /* Added padding for better spacing */
   position: relative;
-
-
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-/* Container for Section Content */
 .experience-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px; /* Added padding for better spacing */
-  align-items: center;
-  
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-/* Section Title */
 .section-title {
-  font-size: 46px;
+  font-size: 2.875rem;
   font-weight: bold;
-  margin-bottom: 10px;
-  position: relative;
+  margin-bottom: 0.625rem;
+  color: #d400ff;
+  margin-left: 0.9rem;
 }
 
-
-/* Timeline Experience */
 .timeline-experience {
-  margin-top: 60px;
+  margin-top: 3.75rem;
+  width: 100%;
 }
 
-/* Timeline Period */
 .timeline-period {
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
   text-align: right;
   color: rgba(255, 255, 255, 0.2);
 }
 
-/* Timeline Item */
 .timeline-item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
+  width: 100%;
 }
 
-/* Timeline Icon */
 .timeline-icon {
-  font-size: 64px;
+  font-size: 4rem;
   color: #008cba;
-  margin-right: 20px;
-  margin-top: -20px;
+  margin-right: 1.25rem;
+  margin-top: -1.25rem;
 }
 
-/* Timeline Content */
 .timeline-content {
   display: flex;
-  flex-direction: column; /* Adjusted for better layout */
+  flex-direction: column;
   justify-content: center;
+  color: #d400ff;
+  width: calc(100% - 5rem);
+  margin-left: 1.5rem;
 }
 
-/* Timeline Content Heading */
 .timeline-content h3 {
-  font-size: 24px;
+  font-size: 2rem;
   font-weight: bold;
   margin: 0;
 }
 
-/* Timeline Content Subheading */
 .timeline-content h4 {
-  font-size: 18px;
+  font-size: 1.8rem;
   color: #a8a8a8;
-  margin: 5px 0;
+  margin: 0.3125rem 0;
 }
 
-/* Timeline Content Paragraph */
 .timeline-content p {
-  font-size: 16px;
+  font-size: 1.5rem;
   color: #d1d1d1;
-  line-height: 2rem;
+  line-height: normal;
 }
 
-/* Additional Content Styling */
-.timeline-content-p {
-  width: 100%; /* Adjusted width to be responsive */
-  margin-top: -15px;
-}
-
+.timeline-content-p,
 .timeline-content-p2 {
-  width: 100%; /* Adjusted width to be responsive */
-  margin-top: -15px;
+  width: 100%;
+  margin-top: -0.9375rem;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
+  .experience-section,
+  .experience-container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
   .section-title {
-      font-size: 36px; /* Adjust font size for smaller screens */
+    font-size: 2rem;
+    margin-left: 0.8rem;
   }
 
   .timeline-period {
-      font-size: 48px; /* Adjust font size for smaller screens */
+    font-size: 3rem;
   }
 
   .timeline-icon {
-      font-size: 48px; /* Adjust icon size for smaller screens */
+    font-size: 3rem;
+    margin-left: 0.9rem;
   }
 
   .timeline-content h3 {
-      font-size: 20px; /* Adjust heading size for smaller screens */
+    font-size: 1.4rem;
   }
 
   .timeline-content h4 {
-      font-size: 16px; /* Adjust subheading size for smaller screens */
+    font-size: 1.4rem;
   }
 
   .timeline-content p {
-      font-size: 14px; /* Adjust paragraph size for smaller screens */
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .section-title {
-      font-size: 28px; /* Further adjust font size for very small screens */
-  }
-
-  .timeline-period {
-      font-size: 36px; /* Further adjust font size for very small screens */
-  }
-
-  .timeline-icon {
-      font-size: 36px; /* Further adjust icon size for very small screens */
-  }
-
-  .timeline-content h3 {
-      font-size: 18px; /* Further adjust heading size for very small screens */
-  }
-
-  .timeline-content h4 {
-      font-size: 14px; /* Further adjust subheading size for very small screens */
-  }
-
-  .timeline-content p {
-      font-size: 12px; /* Further adjust paragraph size for very small screens */
+    font-size: 1.2rem;
   }
 }

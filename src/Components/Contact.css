@@ -1,15 +1,17 @@
-/* Contact Container */
 .contact-container {
     color: #ffffff;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
     overflow: hidden;
     margin: 0 auto; 
     width: 100%; 
-}
-
-/* Overlay Background */
-.contact-container::before {
+  }
+  
+  .contact-container::before {
     content: '';
     position: absolute;
     top: 0;
@@ -20,144 +22,140 @@
       radial-gradient(circle at top right, rgba(0, 168, 255, 0.3), transparent 70%),
       radial-gradient(circle at bottom left, rgba(128, 0, 128, 0.3), transparent 70%);
     z-index: -1;
-}
-
-/* Contact Title */
-.contact-title {
+  }
+  
+  .contact-title {
     font-size: 3.5rem;
     text-align: center;
-    margin: 2rem; /* Remove bottom margin */
-    padding-bottom: 0.5rem; /* Small padding to create space below title */
-}
-
-/* Contact Subtitle */
-.contact-subtitle {
+    margin: 0;
+    padding-bottom: 0.5rem;
+  }
+  
+  .contact-subtitle {
     font-size: 1.5rem;
     color: #00a8ff;
     text-align: center;
-    margin: 0; /* Remove bottom margin */
-    padding-bottom: 3rem; /* Small padding for spacing */
+    margin: 0;
+    padding-bottom: 3rem;
     font-style: italic;
     font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-/* Contact Info Grid */
-.contact-info {
+  }
+  
+  .contact-info {
     display: grid;
-    grid-template-columns: repeat(3,1fr); /* Responsive grid */
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    padding: 0; /* Remove extra padding */
-}
-
-/* Contact Item */
-.contact-item {
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-item {
     text-align: center;
-    margin: 0; /* Remove extra margin */
-    padding: 1rem; /* Add padding inside each item */
-}
-
-/* Contact Icon */
-.contact-icon {
+    padding: 1rem;
+  }
+  
+  .contact-icon {
     font-size: 3.5rem;
     color: #00a8ff;
-    margin: 0; /* Remove bottom margin */
-    padding-bottom: 1rem; /* Small padding for spacing */
-}
-
-/* Contact Item Heading */
-.contact-item h3 {
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+  
+  .contact-item h3 {
     font-size: 1.2rem;
-    margin: 0; /* Remove bottom margin */
-}
-
-/* Contact Item Paragraph */
-.contact-item p {
+    margin: 0;
+  }
+  
+  .contact-item p {
     font-size: 1rem;
     color: #cccccc;
-    margin: 0; /* Remove bottom margin */
-}
-
-/* Contact Item Links */
-.contact-item a {
+    margin: 0;
+  }
+  
+  .contact-item a {
     color: #cccccc;
     text-decoration: none;
-}
-
-/* Footer */
-.contact-footer {
+  }
+  
+  .contact-footer {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     padding: 1rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    text-align: center; /* Center text in footer */
-}
-
-/* Footer Name */
-.footer-name {
+    text-align: center;
+  }
+  
+  .footer-name {
     font-size: 2.5rem;
     font-weight: bold;
     letter-spacing: 2px;
-    margin: 0; /* Remove bottom margin */
+    margin: 0;
     -webkit-text-stroke: 1px white;
     -webkit-text-fill-color: transparent;
-}
-
-/* Footer Year */
-.footer-year {
+  }
+  
+  .footer-year {
     font-size: 1rem;
     color: #cccccc;
-    margin: 0; /* Remove bottom margin */
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
+    margin: 0;
+  }
+  
+  @media screen and (max-width: 768px) {
     .contact-title {
-        font-size: 2.5rem; /* Adjust font size for smaller screens */
-        padding-bottom: 0.5rem; /* Adjust padding */
+      font-size: 2.5rem;
+      padding-bottom: 0.5rem;
     }
-
+  
     .contact-subtitle {
-        font-size: 1.2rem; /* Adjust font size for smaller screens */
-        padding-bottom: 2rem; /* Adjust padding */
+      font-size: 1.2rem;
+      padding-bottom: 2rem;
     }
-
+  
     .contact-icon {
-        font-size: 2.5rem; /* Adjust icon size for smaller screens */
-        padding-bottom: 0.5rem; /* Adjust padding */
+      font-size: 2.5rem;
+      padding-bottom: 0.5rem;
     }
-
+  
     .contact-item h3 {
-        font-size: 1rem; /* Adjust heading size for smaller screens */
+      font-size: 1rem;
     }
-
+  
     .contact-item p {
-        font-size: 0.9rem; /* Adjust paragraph size for smaller screens */
+      font-size: 0.9rem;
     }
-}
-
-@media screen and (max-width: 576px) {
+  }
+  
+  @media screen and (max-width: 576px) {
     .contact-title {
-        font-size: 2rem; /* Further adjust font size for very small screens */
-        padding-bottom: 0.5rem; /* Further adjust padding */
+      font-size: 1.5rem;
+      padding-bottom: 0.5rem;
     }
-
+  
     .contact-subtitle {
-        font-size: 1rem; /* Further adjust font size for very small screens */
-        padding-bottom: 1.5rem; /* Further adjust padding */
+      font-size: 1rem;
+      padding-bottom: 1.5rem;
     }
-
+  
     .contact-icon {
-        font-size: 2rem; /* Further adjust icon size for very small screens */
-        padding-bottom: 0.5rem; /* Further adjust padding */
+      font-size: 1.2rem;
+      padding-bottom: 0.5rem;
     }
-
+  
     .contact-item h3 {
-        font-size: 0.9rem; /* Further adjust heading size for very small screens */
+      font-size: 0.9rem;
     }
-
+  
     .contact-item p {
-        font-size: 0.8rem; /* Further adjust paragraph size for very small screens */
+      font-size: 0.8rem;
     }
-}
+    
+    .contact-info {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.7rem;
+      padding: 1rem;
+    }
+  }
+  

@@ -8,12 +8,16 @@
   max-width: 1200px;
 }
 
-/* Title Styling */
+
 .project-title {
   font-size: 2.5rem;
   margin-top: 20px;
   position: relative;
   display: inline-block;
+  color: #d400ff;
+}
+.projrct-card-h{
+  color: #d400ff;
 }
 
 /* Underline Styling */
@@ -25,15 +29,14 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 100px; /* Adjusted to be below the title */
+  top: 100px; 
 }
-
 /* Grid Layout for Projects */
 .project-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Space between cards */
-  justify-content: center; /* Center cards horizontally */
+  gap: 20px; 
+  justify-content: center; 
 }
 
 /* Individual Project Card */
@@ -49,7 +52,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  position: relative; /* Needed for link positioning */
+  position: relative; 
 }
 
 /* Card Image */
@@ -77,9 +80,9 @@
 /* Links Container */
 .project-card .links {
   display: flex;
-  gap: 10px; /* Space between links */
-  justify-content: center; /* Center links horizontally */
-  margin-top: auto; /* Push links to the bottom */
+  gap: 10px; 
+  justify-content: center; 
+  margin-top: auto;
 }
 
 /* Individual Link Styling */
@@ -95,7 +98,7 @@
 .project-card .links a:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  filter: brightness(1.2); /* Brighten on hover */
+  filter: brightness(1.2); 
 }
 .github {
   display: inline-block;
@@ -111,24 +114,24 @@
 }
 
 .github:hover {
-  background-color: #444444; /* Slightly lighter background on hover */
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  background-color: #444444; 
+  transform: scale(1.05); 
 }
 
 .github:first-of-type {
-  background-color: #7fafa7; /* Darker color for the GitHub link */
+  background-color: #7fafa7;
 }
 
 .github:last-of-type {
-  background-color: #5f8091; /* Bright color for the Live link */
+  background-color: #5f8091; 
 }
 
 .github:first-of-type:hover {
-  background-color: #444; /* Lighter color on hover for GitHub link */
+  background-color: #444; 
 }
 
 .github:last-of-type:hover {
-  background-color: #0091ea; /* Lighter color on hover for Live link */
+  background-color: #0091ea; 
 }
 
 /* Year Range Styling */
@@ -141,8 +144,8 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .project-grid {
-    flex-direction: column; /* Stack cards vertically on smaller screens */
-    align-items: center; /* Center align cards */
+    flex-direction: column; 
+    align-items: center; 
   }
   .project-title {
     font-size: 2rem;
@@ -150,22 +153,22 @@
   }
 
   .section-underline {
-    width: 130px; /* Adjust underline width for smaller screens */
-    top: 90px; /* Adjust top spacing */
+    width: 130px; 
+    top: 90px; 
     
   }
 
   .github {
-    font-size: 1rem; /* Adjust font size for medium screens */
-    padding: 8px 16px; /* Adjust padding for medium screens */
-    margin: 5px 5px; /* Adjust margin for medium screens */
+    font-size: 1rem; 
+    padding: 8px 16px; 
+    margin: 5px 5px; 
 }
 }
 
 @media screen and (max-width: 576px) {
   .github {
-      font-size: 0.9rem; /* Further adjust font size for small screens */
-      padding: 6px 12px; /* Further adjust padding for small screens */
-      margin: 5px 3px; /* Further adjust margin for small screens */
+      font-size: 0.9rem; 
+      padding: 6px 12px; 
+      margin: 5px 3px; 
   }
 }
