@@ -24,8 +24,11 @@
   font-weight: bold;
   margin-bottom: 10px;
   position: relative;
+  color: #d400ff;
 }
-
+.timeline-content-h{
+  color: #d400ff;
+}
 
 /* Timeline Experience */
 .timeline-experience {
