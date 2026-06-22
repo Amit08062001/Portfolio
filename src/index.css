@@ -15,6 +15,14 @@ body {
 .section {
   @apply max-w-7xl mx-auto px-6 md:px-12 pt-48;
 }
+@media (max-width: 640px) {
+  .scroll-down-btn {
+    left: 45%;
+  }
+}
+.outline-none {
+  outline: 2px solid rgb(55 65 81) !important;
+}
 
 .glass {
   background: rgba(255,255,255,0.05);
@@ -79,7 +87,7 @@ body {
 }
 
 .glass {
-  background: rgba(15, 23, 42, 0.6);
+  background: rgba(31 41 55);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.08);
 }

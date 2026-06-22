@@ -55,11 +55,11 @@ function Hero() {
             <h1
               className="
               text-4xl
-              sm:text-5xl
-              md:text-6xl
+              sm:text-2xl
+              md:text-2xl
               lg:text-6xl
               font-bold
-              mb-6
+              mb-2
               "
               style={{
                 fontFamily: "monospace",
@@ -70,11 +70,11 @@ function Hero() {
 
             <h2
               className="
-  text-2xl
+  text-xl
   md:text-3xl
   lg:text-3xl
   font-bold
-  mb-6
+  
   bg-gradient-to-r
   from-blue-400
   to-cyan-400
@@ -101,7 +101,7 @@ function Hero() {
               />
             </h2>
 
-            <p className="text-slate-400 text-base md:text-lg leading-8 max-w-xl">
+            <p className="text-slate-400 text-base md:text-lg sm:text-sm leading-8 max-w-xl">
               Frontend Developer with 2+ years of experience building scalable
               React.js applications, reusable component architectures, and
               high-performance user interfaces. Passionate about delivering

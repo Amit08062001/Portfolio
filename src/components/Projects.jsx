@@ -3,7 +3,7 @@ import { projects } from "../data/projects";
 
 function Projects() {
   return (
-    <section id="projects" className="section">
+    <section id="projects" className="section !pt-28">
       <SectionTitle
         title="Projects"
         subtitle="Professional work, product experiences, and frontend applications I've built."

@@ -23,11 +23,11 @@ function About() {
   return (
     <section
       id="about"
-      className="section"
+      className="section !pt-36"
     >
       <SectionTitle
         title="My Professional Side"
-        subtitle="Frontend Developer focused on building scalable and high-performance web experiences."
+        
       />
 
       <div className="grid lg:grid-cols-2 gap-10 items-start">
@@ -38,87 +38,82 @@ function About() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="glass rounded-3xl p-8 border border-slate-800 h-full">
-            <p className="text-lg text-slate-200 leading-10">
-              Frontend Developer with 2+ years of
-              experience building scalable React.js
-              applications, reusable component
-              architectures, and responsive user
-              interfaces. Experienced in API
-              integration, performance optimization,
-              Core Web Vitals improvements, and
-              modern frontend development practices.
-            </p>
+          <div className="glass rounded-3xl p-4 sm:p-6 lg:p-8 border border-slate-800 h-full">
+  <p className="text-sm sm:text-base lg:text-md text-slate-200 leading-7 sm:leading-8">
+    Frontend Developer with 2+ years of experience building scalable React.js
+    applications, reusable component architectures, and responsive user
+    interfaces. Experienced in API integration, performance optimization,
+    Core Web Vitals improvements, and modern frontend development practices.
+  </p>
 
-            <div className="mt-10 space-y-8">
-              <div className="flex gap-4">
-                <FaEnvelope className="text-blue-400 text-xl mt-1" />
+  <div className="mt-8 sm:mt-10 space-y-6 sm:space-y-8">
+    <div className="flex gap-3 sm:gap-4">
+      <FaEnvelope className="text-blue-400 text-lg sm:text-xl mt-1 flex-shrink-0" />
 
-                <div>
-                  <h4 className="font-semibold text-xl">
-                    Email
-                  </h4>
+      <div>
+        <h4 className="font-semibold text-base sm:text-lg lg:text-xl">
+          Email
+        </h4>
 
-                  <p className="text-slate-400">
-                    amitsingh08062001@gmail.com
-                  </p>
-                </div>
-              </div>
+        <p className="text-slate-400 text-sm sm:text-base break-all">
+          amitsingh08062001@gmail.com
+        </p>
+      </div>
+    </div>
 
-              <div className="flex gap-4">
-                <FaMapMarkerAlt className="text-blue-400 text-xl mt-1" />
+    <div className="flex gap-3 sm:gap-4">
+      <FaMapMarkerAlt className="text-blue-400 text-lg sm:text-xl mt-1 flex-shrink-0" />
 
-                <div>
-                  <h4 className="font-semibold text-xl">
-                    Location
-                  </h4>
+      <div>
+        <h4 className="font-semibold text-base sm:text-lg lg:text-xl">
+          Location
+        </h4>
 
-                  <p className="text-slate-400">
-                    Haryana, India
-                  </p>
-                </div>
-              </div>
+        <p className="text-slate-400 text-sm sm:text-base">
+          Haryana, India
+        </p>
+      </div>
+    </div>
 
-              <div className="flex gap-4">
-                <FaGraduationCap className="text-blue-400 text-xl mt-1" />
+    <div className="flex gap-3 sm:gap-4">
+      <FaGraduationCap className="text-blue-400 text-lg sm:text-xl mt-1 flex-shrink-0" />
 
-                <div>
-                  <h4 className="font-semibold text-xl">
-                    Education
-                  </h4>
+      <div>
+        <h4 className="font-semibold text-base sm:text-lg lg:text-xl">
+          Education
+        </h4>
 
-                  <p className="text-slate-400">
-                    B.Tech Computer Science &
-                    Engineering
-                  </p>
-                </div>
-              </div>
-            </div>
+        <p className="text-slate-400 text-sm sm:text-base">
+          B.Tech Computer Science & Engineering
+        </p>
+      </div>
+    </div>
+  </div>
 
-            <h4 className="text-2xl font-bold mt-10 mb-5">
-              Core Areas
-            </h4>
+  <h4 className="text-xl sm:text-2xl font-bold mt-8 sm:mt-10 mb-4 sm:mb-5">
+    Core Areas
+  </h4>
 
-            <div className="flex flex-wrap gap-3">
-              {skills.map((skill) => (
-                <span
-                  key={skill}
-                  className="
-                    px-4
-                    py-2
-                    rounded-full
-                    border
-                    border-blue-500/30
-                    bg-blue-500/10
-                    text-blue-300
-                    text-sm
-                  "
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
+  <div className="flex flex-wrap gap-2 sm:gap-3">
+    {skills.map((skill) => (
+      <span
+        key={skill}
+        className="
+          px-3 sm:px-4
+          py-2
+          rounded-full
+          border
+          border-blue-500/30
+          bg-blue-500/10
+          text-blue-300
+          text-xs sm:text-sm
+        "
+      >
+        {skill}
+      </span>
+    ))}
+  </div>
+</div>
         </motion.div>
 
         {/* RIGHT SIDE */}
@@ -128,7 +123,7 @@ function About() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h3 className="text-4xl font-bold mb-8">
+          <h3 className="text-2xl sm:text-2xl md:text-4xl lg:text-4xl font-bold mb-8">
             Education
           </h3>
 

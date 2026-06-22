@@ -34,7 +34,7 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className="section">
+    <section id="contact" className="section !pt-28">
       <SectionTitle
         title="Get In Touch"
         subtitle="Let's discuss opportunities and exciting projects."

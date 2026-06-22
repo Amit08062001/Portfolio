@@ -4,7 +4,7 @@ import { achievements } from "../data/achievements";
 
 function Achievements() {
   return (
-    <section id="achievements" className="section">
+    <section id="achievements" className="section !pt-28">
       <SectionTitle
         title="Achievements"
         subtitle="Milestones, expertise, and professional highlights."

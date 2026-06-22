@@ -13,6 +13,7 @@ function ScrollDown() {
     <button
       onClick={scrollToAbout}
       className="
+      scroll-down-btn
         absolute
         left-1/2
         -translate-x-1/2
