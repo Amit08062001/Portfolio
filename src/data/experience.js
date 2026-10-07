@@ -11,7 +11,7 @@ export const experienceData = [
   {
     id: 2,
     company: "CodersVoice",
-    role: "Web Developer",
+    role: "Frontend Developer Intern",
     duration: "Jan 2024 - Jan 2025",
     description:
       "Developed responsive web applications using HTML, CSS, JavaScript, and React.js. Collaborated with cross-functional teams to deliver optimized user interfaces and improve overall user experience."
