@@ -1,7 +1,37 @@
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
 import project3 from "../assets/project3.png";
+import project4 from "../assets/ShopKart-E-Commerce-Showcase.png";
 export const projects = [
+  {
+    id: 4,
+    title: "Shopkart",
+
+    description:
+      "A modern e-commerce web platform featuring product listings, dynamic cart management, and seamless filtering, built with responsive component architecture and state management for quick page loads.",
+
+    features: [
+      "Product listings",
+      "Dynamic cart management",
+      "Seamless product filtering",
+      "Responsive component architecture",
+      "State management for quick page loads"
+    ],
+
+    image: project4,
+
+    tech: [
+      "React.js",
+      "JavaScript",
+      "Tailwind",
+      "Responsive Design",
+      "State Management"
+    ],
+
+    github: "https://amit08062001.github.io/shopkart/",
+    live: "https://amit08062001.github.io/shopkart/"
+  },
+
   {
     id: 1,
     title: "MelodyStream",
